@@ -12,7 +12,7 @@ export type State = {
   set: (name: string, value: any) => any;
   opts: VueJSXPluginOptions;
   file: BabelCore.BabelFile
-}
+};
 
 export interface VueJSXPluginOptions {
   /** transform `on: { click: xx }` to `onClick: xxx` */

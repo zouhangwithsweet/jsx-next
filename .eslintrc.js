@@ -5,6 +5,7 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
     },
+    project: './tsconfig.json',
   },
   env: {
     browser: true,
@@ -15,8 +16,7 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint', 'import'],
   extends: [
-    'eslint-config-airbnb-base',
-    'plugin:@typescript-eslint/recommended',
+    'airbnb-typescript/base',
   ],
   rules: {
     'no-nested-ternary': [0],
